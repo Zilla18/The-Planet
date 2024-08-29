@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap");
+/* Global presets styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Oswald", sans-serif;
+}
+
+p,
+a,
+li,
+span {
+  font-family: "Noto Sans", sans-serif;
+}
+/* ends here */
+
+/* Body styling starts */
+body {
+  background-color: #070625;
+}
+/* ends here */
+
+/* navbar styling starts */
+.nav--bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem;
+  border-bottom: 1px solid rgb(44, 44, 44);
+}
+#nav--logo {
+  color: rgb(211, 211, 211);
+}
+
+#nav--links {
+  display: none;
+  gap: 1.5rem;
+}
+@media screen and (min-width: 700px) {
+  #nav--links {
+    display: flex;
+    gap: 1.5rem;
+  }
+}
+
+#nav--links a {
+  color: rgb(211, 211, 211);
+  letter-spacing: 0.05rem;
+  font-size: 0.8rem;
+}
+/* ends here */
+
+/* hero-section starts */
+#hero--section {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  margin: 3rem, 0;
+  gap: 5rem;
+  max-width: 1000px;
+  margin-inline: auto;
+  align-items: center;
+}
+@media screen and (min-width: 700px) {
+  #hero--section {
+    flex-direction: row;
+  }
+}
+#earth-content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#earth-content-container h1 {
+  color: rgb(211, 211, 211);
+}
+
+#earth-content-container p {
+  color: rgb(211, 211, 211);
+}
+
+#source-text {
+  color: gray;
+}
+
+#wikipedia-text {
+  color: rgb(211, 211, 211);
+  text-decoration: underline;
+  margin-inline: 0.5rem;
+}
+
+i {
+  color: rgb(211, 211, 211);
+}
+/* ends here */
+
+/* earth start styles */
+#earth-tags li {
+  border: 0.02px solid white;
+  padding: 1rem;
+  color: rgb(165, 164, 164);
+  display: flex;
+  gap: 1.5rem;
+  letter-spacing: 0.08rem;
+  max-width: 500px;
+  margin-bottom: 1rem;
+}
+
+#earth-tags li:hover {
+  background-color: blueviolet;
+  cursor: pointer;
+  border-color: blueviolet;
+}
+/* ends here */
+
+/* earth matrics styles */
+#earth-metrics-container {
+  display: flex;
+  max-width: 1000px;
+  margin-inline: auto;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.metrics-card {
+  border: 1px solid rgb(165, 164, 164);
+  padding: 1rem;
+  width: 100%;
+  max-width: 225px;
+}
+.metrics-card p {
+  color: rgb(165, 164, 164);
+  letter-spacing: 0.08trem;
+  font-size: 0.6rem;
+  margin-bottom: 0.6rem;
+}
+.metrics-card h3 {
+  color: rgb(211, 211, 211);
+  font-size: 2rem;
+}
+/* ends here */
